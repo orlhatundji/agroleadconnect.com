@@ -98,12 +98,17 @@ body {
 	margin-top: 10px;
 	border-radius: 10%;
 }
+#joinus-section{
+	height:100vh;
+}
 
-.footer .footnote{
+.footnote{
+	bottom:0;
 	color:white;
-	/* height: 110%; */
-	padding-top:10px;
-	padding-bottom:auto;
+	width: 100%;
+	left: 0;
+	right:0;
+	text-align: center;
 }
 
 
