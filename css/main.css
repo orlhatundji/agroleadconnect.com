@@ -1,6 +1,6 @@
 body {
   overflow-x: hidden; 
-  background: linear-gradient(to right, #C6EA8D, #FE90AF, black);
+  background: linear-gradient(to right, #C6EA8D, #FE90AF);
 }
 #topmost-div{
   background: linear-gradient(to right, #C6EA8D, #FE90AF, white);
@@ -24,9 +24,12 @@ body {
 	font-weight: bold;
 	color:white !important;
 }
+
 .nav-link.active{
 	text-align: center;
 	padding-left:auto;
+	background-color: red;
+
 }
 .nav-link:hover{
 	background: white;
@@ -96,17 +99,23 @@ body {
 	border-radius: 10%;
 }
 
+.footer .footnote{
+	color:white;
+	/* height: 110%; */
+	padding-top:10px;
+	padding-bottom:auto;
+}
 
 
 @media(min-width: 500px){	
 	.gbogbo{
 		display: flex;
 	}
-}
-.footer{
-	height:100px;
-}
 
+.footer{
+	height:200px;
+	}
 .footer-div{
 	padding-top:10px;
+	}
 }
