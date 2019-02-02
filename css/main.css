@@ -50,8 +50,9 @@ body {
 } */
 #myCarousel .carousel-item{
 	margin-top: 5px;
-	height: 50vh;
+	height: 70vh;
 }
+
 
 .carousel-image-1 {
   background: url("../images/tomatoes.jpg");
@@ -92,12 +93,11 @@ body {
 	margin-left: auto;
 	border-radius: 0%;
 	margin-top: 10px;
+	border-radius: 10%;
 }
-@media screen only {
-	.carousel-caption{
-		font-size:50%;
-	}
-}
+
+
+
 @media(min-width: 500px){	
 	.gbogbo{
 		display: flex;
@@ -105,4 +105,8 @@ body {
 }
 .footer{
 	height:100px;
+}
+
+.footer-div{
+	padding-top:10px;
 }
