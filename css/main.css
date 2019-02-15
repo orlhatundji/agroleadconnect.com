@@ -111,14 +111,23 @@ body {
 	text-align: center;
 }
 
-
+.footer-div{
+	box-shadow: 4px 2px 4px 2px #200024;
+	box-sizing: border-box;
+	align-items: center !important;
+	justify-content: center !important;
+	justify-items: center;
+	align-content: center;
+	padding-bottom: 30px;
+	margin: 20px;
+}
 @media(min-width: 500px){	
 	.gbogbo{
 		display: flex;
 	}
 
 .footer{
-	height:200px;
+	/* height:200px; */
 	}
 .footer-div{
 	padding-top:10px;

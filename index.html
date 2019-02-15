@@ -87,14 +87,26 @@
 
 	<div class="footer container-fluid">
 		<div class="row justify-content-center">
-			<div class="container col-md-4 footer-div"  id="contact-us">
+			<div class="container col-md-3 footer-div"  id="contact-us">
 				<h5>Contact Us</h5>
 				<h6>Email: agroleadconnect@gmail.com</h6>
 				<h6>Tel: 08090898765</h6>
 			</div>
-			<div class="container col-md-4 footer-div">
+			<div class="container col-md-3 footer-div">
 				<h5><a href="about.html">Read More About us. . .</a></h5>
 				<h6>Find out more about how we operate</h6>
+			</div>
+			<div class="container col-md-6 footer-div">
+				<h5>Leave a message</a></h5>
+				<div class="contact-form">
+					<form action="contact-form-handler.php" id="contact-form" method="post">
+						<input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelpId" placeholder="Enter your full name">
+						<input type="email" class="form-control" name="name" id="name" placeholder="Enter your email">
+						
+						<textarea class="form-control" name="message" id="" rows="2"></textarea>
+						<button type="submit" class="btn btn-warning form-control mt-2" value="SEND MESSAGE">Submit</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
