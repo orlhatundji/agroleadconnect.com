@@ -1,19 +1,25 @@
 body {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+   }
+body {
   overflow-x: hidden; 
   background: linear-gradient(to right, #C6EA8D, #FE90AF);
 }
 #topmost-div{
   background: linear-gradient(to right, #C6EA8D, #FE90AF, white);
 }
+.fa{
+	font-size: 150%;
+}
 .navbar-brand{
 	font-size: 200%;
 	padding-top:0px;
 	padding-bottom: 0px;
-}
-#vision-mission-div{
-	text-align: justify;
-	padding: 10px 10px 10px 30px;
-	background: linear-gradient(to right, #C6EA8D, #FE90AF)
 }
 .nav-item{
 	margin-left: 15px;
@@ -77,6 +83,11 @@ body {
   width: 100%;
   height: 100%; 
 }
+
+#vision-mission-div{
+	text-align: justify;
+	background: linear-gradient(to right, #C6EA8D, #FE90AF)
+}
 .core-values{
 	list-style: none;
 	font-size: 16px;
@@ -112,14 +123,17 @@ body {
 }
 
 .footer-div{
+	/* font-family:arial; */
 	box-shadow: 4px 2px 4px 2px #200024;
-	box-sizing: border-box;
-	align-items: center !important;
+	/* box-sizing: border-box; */
 	justify-content: center !important;
-	justify-items: center;
-	align-content: center;
+	align-items: center !important;
 	padding-bottom: 30px;
 	margin: 20px;
+}
+[placeholder]{
+	font-style: oblique;
+	opacity: 0.7;
 }
 @media(min-width: 500px){	
 	.gbogbo{
