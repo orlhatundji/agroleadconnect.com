@@ -9,12 +9,22 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
+	<style>
+			#particles-js{
+				height:100vh;
+				width:100vw;
+				position: fixed;	
+				z-index: -1;			
+			}
+			
+			body{
+				color:white;
+				background: black;
+			}
+	</style>
 </head>
 
 <body>
-
 	<nav class="navbar navbar-fixed-top navbar-expand-sm navbar-dark bg-dark">
 		<div class="container">
 			<a href="index.html" class="navbar-brand">AgroLead</a>
@@ -29,20 +39,21 @@
 					<li class="nav-item ">
 						<a href="about.html" class="nav-link active">About</a>
 					</li>
-					<li class="nav-item ">
+					<!-- <li class="nav-item ">
 						<a href="products.html" class="nav-link">Products</a>
 					</li>
 					<li class="nav-item ">
 						<a href="joinus.html" class="nav-link">Join Us</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<div class="container-fluid">
-		<section class="about">
-			<div class="container lead" id="about">
+		<div class="container-fluid particle-background" id="particles-js"></div>
+		<div class="row text-align-justify" id="about">
+			<div class="container col-md-6 lead box p-2 mt-2 mb-2" id="about">
 				<center>
 					<h3 class="pt-5"> What we are</h3>
 					<p class="lead">A corporate organisation created to bridge the gap between producers, retailers and buyers.</p>
@@ -61,19 +72,39 @@
 					agroleadconnect@gmail.com.
 				</p>
 			</div>
-		</section>
+			<div class="about-side-2 col-md-5 mr-2 box p-2 mt-2 mb-2">
+				<div class="model-structure">
+					<center><h2 class="our-model"> Our Model</h2></center>
+					<div class="forbuyers">
+						<div class="partner">Buyers</div>
+						<div class="line-v"></div>
+					</div>
+					<div class="for-partners-consultants">
+						<div class="partners">Partners</div>
+						<div class="line-h"></div>
+						<div class="agrolead-text">Agrolead</div>
+						<div class="line-h"></div>
+						<div class="consultants">consultants</div>
+					</div>
+					<div class="for-sellers">
+						<div class="line-v"></div>
+						<div class="sellers">Sellers</div>
+					</div>
+				</div>
+			</div> 
+		</div>
 
 		<section id="vision-mission-section">
-			<div class="container" id="vision-mission-div">
+			<div class="container lead p-2 mt-2 mb-2" id="vision-mission-div">
 				<div class="row gbogbo">
-					<div class="vision-container col-sm-6 col-md-3 ml-0">
-						<h3>Vision</h3>
+					<div class="vision-container col-md-3 ml-0">
+						<center><h3>Vision</h3></center>
 						<p>
 							Having an online agricultural market that encompasses all sectors of agriculture.
 						</p>
 					</div>
-					<div class="mision-container col-sm-6 col-md-6 col-lg-6 ml-0">
-						<h3>Mission</h3>
+					<div class="mision-container col-md-6 col-lg-6 ml-0">
+						<center><h3>Mission</h3></center>
 						<p>
 							Creating an enabling environment for agricultural based marketing, services rendering through the use of technology.
 						</p>
@@ -81,45 +112,71 @@
 							To enable agricultural economic growth through the use of information and communication technology.
 						</p>
 					</div>
-					<div class="values-container col-sm-6 col-md-3 ml-0">
-						<h3>Core Values	<h3>
+					<div class="values-container col-md-3 ml-0">
+						<center><h3>Core Values	</h3>
 							<ul class="core-values">
 								<li class="core-values-li lead">Diligence</li>
 								<li class="core-values-li lead">Reliability</li>
 								<li class="core-values-li lead">Service</li>
 								<li class="core-values-li lead">Accountability</li>
 							</ul>
+						</center>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		</div>
-		<div class="footer container-fluid">
-				<div class="row justify-content-center">
-					<div class="container col-md-3 pt-3 pb-2 footer-div"  id="contact-us">
-						<center>
-							<h6>Contact Us <i class="fa fa-address-book" ></i></h6>
-							<p>Email: agroleadconnect@gmail.com <br><small>Tel: 08090898765</small></p>
-							
-						</center>
-					</div>
-					<div class="container col-md-3 pt-3 pb-2 footer-div">
-						<center>
-							<h6><a href="about.html">Read More About us. . .</a></h6>
-							<p>Find out more about how we delive our services and connect our partners.</p>
-						</center>
-					</div>
+	</div>
+	<div class="footer container-fluid">
+			<div class="row justify-content-center">
+				<div class="container col-md-3 pt-3 pb-2 footer-div"  id="contact-us">
+					<center>
+						<h6>Contact Us <i class="fa fa-address-book" ></i></h6>
+						<p>Email: agroleadconnect@gmail.com <br><small>Tel: 08090898765</small></p>
+						
+					</center>
+				</div>
+				<div class="container col-md-3 pt-3 pb-2 footer-div">
+					<center>
+						<h6><a href="about.html">Read More About us. . .</a></h6>
+						<p>Find out more about how we delive our services and connect our partners.</p>
+					</center>
 				</div>
 			</div>
-		<section class="justify-content-center bg-dark m-0 pt-2 pb-2 footnote container-fluid">
-			<h6>&copy; Copyright AgroLead 2019</h6>
-		</section>
+	</div>
+	<section class="justify-content-center bg-dark m-0 pt-2 pb-2 footnote container-fluid">
+		<h6>&copy; Copyright AgroLeadConnect 2019</h6>
+	</section>
+	
 
 	<script type="text/javascript" src="js/custom-js.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.js" integrity="sha256-cNEAbEDCqByWSWu+oZQUfI69IVjhz4Bz/e2EkuDsFEI=" crossorigin="anonymous"></script>    
+    <script>
+		var count_particles, stats, update;
+		stats = new Stats;
+		stats.setMode(0);
+		stats.domElement.style.position = 'absolute';
+		stats.domElement.style.left = '0px';
+		stats.domElement.style.top = '0px';
+		document.body.appendChild(stats.domElement);
+		count_particles = document.querySelector('.js-count-particles');
+		update = function() {
+			stats.begin();
+			stats.end();
+			if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+			count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+			}
+			requestAnimationFrame(update);
+		};
+		requestAnimationFrame(update);
+    </script>
 
 
 </body>

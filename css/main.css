@@ -16,6 +16,10 @@ body {
 .fa{
 	font-size: 150%;
 }
+a, a:hover{
+	text-decoration: none;
+	color: white;
+}
 .navbar-brand{
 	font-size: 200%;
 	padding-top:0px;
@@ -86,7 +90,9 @@ body {
 
 #vision-mission-div{
 	text-align: justify;
-	background: linear-gradient(to right, #C6EA8D, #FE90AF)
+	/* background: linear-gradient(to right, #C6EA8D, #FE90AF) */
+	background: transparent;
+	color: #fff;
 }
 .core-values{
 	list-style: none;
@@ -120,11 +126,12 @@ body {
 	left: 0;
 	right:0;
 	text-align: center;
+	z-index: 2;
 }
 
 .footer-div{
 	/* font-family:arial; */
-	box-shadow: 4px 2px 4px 2px #200024;
+	box-shadow: 1px 1px 4px 2px #fff;
 	/* box-sizing: border-box; */
 	justify-content: center !important;
 	align-items: center !important;
@@ -135,15 +142,69 @@ body {
 	font-style: oblique;
 	opacity: 0.7;
 }
-@media(min-width: 500px){	
+#about{
+	text-align: justify;
+	color: #fff;
+}
+.box{
+	box-shadow: 1px 1px 2px 2px #fff;
+}
+
+@media (min-width: 760px){	
 	.gbogbo{
 		display: flex;
 	}
+	.footer-div{
+		padding-top:10px;
+		}
+	#vision-mission-div{
+		box-shadow: 1px 1px 2px 2px #fff;	
+	}
+	.mision-container, .values-container{
+		border-left:2px solid;
+	}
+	.about-side-2{
+		font-size: 180%;
+	}
+}
+.about-side-2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 120%;
+	text-align: center;
+}
 
-.footer{
-	/* height:200px; */
-	}
-.footer-div{
-	padding-top:10px;
-	}
+.our-model{
+	margin-bottom:30px;
+	text-transform: uppercase;
+	font-size: 150%;
+}
+.line-v{
+	height:30px;
+	border-left: 2px solid #fff;
+	margin-left: 50%;
+}
+.line-h{
+	width:30px;
+	border-top: 2px solid #fff;
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right:10px;
+}
+.for-partners-consultants{
+	display: flex;
+}
+
+.model-structure{
+    animation: myframes 1s ease-in-out 0s infinite alternate forwards running;
+}
+@keyframes myframes{
+    from{ 
+        transform: translate(-10px)
+    }
+    to{
+        transform: translate(30px)
+    }
 }
